@@ -1,7 +1,9 @@
 # Numerical Simulation of laser annealed 1D stacks of materials
 ## Overview
 
-This repository contains matlab software to simulate the maximum temperature reached when a stack of materials is pulsed with a laser. In the power point slide we demonstrate that the 
+This repository contains matlab software to simulate the maximum temperature reached when a stack of materials is pulsed with a laser. By determing the maximum temperature we are able to estimate if the stack will be obliterated by the laser pule ressulting in vapourization/deformation of the material. Using this software, in the power point slide we demonstrate  the software to engineer a stack of materials to sufficently thermal anneal the IZO film without damaging the PEN substrate underneath.  
+
+By tuning the material stack were are able to engineer stacks such that 
 
 ### Solving electromagnetic wave equation
 
