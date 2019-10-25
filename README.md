@@ -1,11 +1,10 @@
 # Numerical Simulation of laser annealed 1D stacks of materials
 ## Overview
 
-This repository contains matlab software to simulate the maximum temperature reached for a stack of materials. In the power point demonstrate we results from using the software to predict the required stack range 
+This repository contains matlab software to simulate the maximum temperature reached when a stack of materials is pulsed with a laser. In the power point slide we demonstrate that the 
 
+### Solving electromagnetic wave equation
 
-For example this software solved for the electromanetic by s
-abosroed energy (organe)
 ![Laser Pulse](https://github.com/OE-FET/numerical_laser_annealing/blob/master/imgs/wave_reflections.png)
 
 ### Generation of Pulse
