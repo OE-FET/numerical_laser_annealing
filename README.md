@@ -10,36 +10,34 @@ Here the pulse is assumed to equalivent to a single freqnecy EM wave spaitally c
 
 ### Solving electromagnetic wave equation
 
-At each boundary the amplitude of the EM wave equation must be continous along with its first derivate. Where n is the nth stack of material and L/R are the corresponding waves is nth stack moving left/right respecificlty. Using these two equations one can solve for the left/right moving waves in each stacks of materials given the initial incident wave.
+At each boundary the amplitude of the EM wave equation must be continous along with its first derivate. Where n is the nth stack of material and L/R are the corresponding waves is nth stack moving left/right respecificlty. Using these two equations one can solve for the left/right moving waves in each stacks of materials given the initial incident wave. For a solid intro to electromanetic wave dynamics please reference "Introduction to Electrodynamics" by david j. griffiths.
 
 ![1](https://latex.codecogs.com/gif.latex?E_%7Bn%2CL%7D%20&plus;E_%7Bn%2CR%7D%20%3D%20E_%7Bn&plus;1%2CL%7D%20&plus;E_%7Bn&plus;1%2CR%7D)
 
 ![2](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20E_%7Bn%2CL%7D&plus;E_%7Bn%2CR%7D%7D%7B%5Cpartial%20x%7D%20%3D%20%5Cfrac%7B%5Cpartial%20E_%7Bn&plus;1%2CL%7D&plus;E_%7Bn&plus;1%2CR%7D%7D%7B%5Cpartial%20x%7D)
 
-The goal of the EM simulation is to solve for the absorption rate (Ar), also known as the rate of work, as a funciton of time. This is achieved by subsituin the solved electromgantic wave into the following equations. 
-
-![](https://latex.codecogs.com/gif.latex?D%20%3D%20%5Cvarepsilon%20E)
-
-![](https://latex.codecogs.com/gif.latex?%5Cbigtriangledown%20E%20%3D%20-%5Cfrac%7B%5Cpartial%20B%7D%7B%5Cpartial%20t%7D)
-
-![](https://latex.codecogs.com/gif.latex?H%20%3D%20%5Cfrac%7BB%7D%7B%5Cmu%20%7D)
-
-![](https://latex.codecogs.com/gif.latex?U%20%3D%20%5Cfrac%7B1%7D%7B2%7D%28E%5Ccdot%20D&plus;B%5Ccdot%20H%29%29)
-
-![](https://latex.codecogs.com/gif.latex?S%20%3D%20E%20%5Ctimes%20H)
-
-
-
-
-![](https://latex.codecogs.com/gif.latex?Ar%20%3D%20%5Cfrac%7B%5Cpartial%20W%7D%7B%5Cpartial%20t%7D%20%3D%20J%5Ccdot%20E%20%3D%20-%5Cfrac%7B%5Cpartial%20U%7D%7B%5Cpartial%20t%7D-%5Cbigtriangledown%20%5Ccdot%20S)
-
-### Solving electromagnetic wave equation
-![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20Q%7D%7B%5Cpartial%20t%7D%3D%5Cvarrho%20%5Ccdot%20C_%7Bp%7D%5Ccdot%20%5Cfrac%7B%5Cpartial%20T%7D%7B%5Cpartial%20t%7D-%5Cbigtriangledown%20%28k%5Cbigtriangledown%20T%29)
-
-For a solid intro to electromanetic wave dynamics please reference "Introduction to Electrodynamics" by david j. griffiths. 
+For a four layer stack, the solution looks like the following.
 ![Laser Pulse](https://github.com/OE-FET/numerical_laser_annealing/blob/master/imgs/wave_reflections.png)
 
+The goal of the EM simulation is to solve for the absorption rate (Ar), also known as the rate of work, as a funciton of time. This is achieved by subsituin the solved electromgantic wave into the following equations. 
 
+![3](https://latex.codecogs.com/gif.latex?D%20%3D%20%5Cvarepsilon%20E)
+
+![4](https://latex.codecogs.com/gif.latex?%5Cbigtriangledown%20E%20%3D%20-%5Cfrac%7B%5Cpartial%20B%7D%7B%5Cpartial%20t%7D)
+
+![5](https://latex.codecogs.com/gif.latex?H%20%3D%20%5Cfrac%7BB%7D%7B%5Cmu%20%7D)
+
+![6](https://latex.codecogs.com/gif.latex?U%20%3D%20%5Cfrac%7B1%7D%7B2%7D%28E%5Ccdot%20D&plus;B%5Ccdot%20H%29%29)
+
+![7](https://latex.codecogs.com/gif.latex?S%20%3D%20E%20%5Ctimes%20H)
+
+![8](https://latex.codecogs.com/gif.latex?Ar%20%3D%20%5Cfrac%7B%5Cpartial%20W%7D%7B%5Cpartial%20t%7D%20%3D%20J%5Ccdot%20E%20%3D%20-%5Cfrac%7B%5Cpartial%20U%7D%7B%5Cpartial%20t%7D-%5Cbigtriangledown%20%5Ccdot%20S)
+
+### Thermal diffusion finite element
+
+Explicity solving the diffusion equation is challanging due to the large number of terms present in the resulting energy absorption rate equation. To circumvent this obstacle we use finite element to approximate the equation. The diffusion equation can be set below. Here we hold the edges of the simulation at a fixed temperature (room temperature).
+
+![9](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20Q%7D%7B%5Cpartial%20t%7D%3D%5Cvarrho%20%5Ccdot%20C_%7Bp%7D%5Ccdot%20%5Cfrac%7B%5Cpartial%20T%7D%7B%5Cpartial%20t%7D-%5Cbigtriangledown%20%28k%5Cbigtriangledown%20T%29)
 
 
 ### Questions, problems, collaborations?
