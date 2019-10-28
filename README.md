@@ -78,7 +78,7 @@ For questions or problems please create an [issue](https://github.com/OE-FET/num
 - **Run_diffusion_eqn.m** - runs a thermal simulation
 - **quickInt.m** - speeds up integrations of EM fields
 - **InitConstants.m** - initializes physical constants
-- **genAR.m** - generate absorption of electromagnetic fields
+- **genAR.m** - generate absorption rate of EM wave
 - **Example_stack.m** - example stack of materials
 - **diffusion_eqn.m** - solves thermal diffusion equation 
 
