@@ -16,8 +16,7 @@ At each boundary the amplitude of the EM wave equation must be continous along w
 
 ![2](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20E_%7Bn%2CL%7D&plus;E_%7Bn%2CR%7D%7D%7B%5Cpartial%20x%7D%20%3D%20%5Cfrac%7B%5Cpartial%20E_%7Bn&plus;1%2CL%7D&plus;E_%7Bn&plus;1%2CR%7D%7D%7B%5Cpartial%20x%7D)
 
-For a four layer stack, the solution looks like the following.
-![Laser Pulse](https://github.com/OE-FET/numerical_laser_annealing/blob/master/imgs/wave_reflections.png)
+
 
 The goal of the EM simulation is to solve for the absorption rate (Ar), also known as the rate of work, as a funciton of time. This is achieved by subsituin the solved electromgantic wave into the following equations. 
 
@@ -33,6 +32,9 @@ The goal of the EM simulation is to solve for the absorption rate (Ar), also kno
 
 ![8](https://latex.codecogs.com/gif.latex?Ar%20%3D%20%5Cfrac%7B%5Cpartial%20W%7D%7B%5Cpartial%20t%7D%20%3D%20J%5Ccdot%20E%20%3D%20-%5Cfrac%7B%5Cpartial%20U%7D%7B%5Cpartial%20t%7D-%5Cbigtriangledown%20%5Ccdot%20S)
 
+
+For a four layer stack including Air, In4ZnO, SiO2 and Si. the solution looks like the following:
+![Laser Pulse](https://github.com/OE-FET/numerical_laser_annealing/blob/master/imgs/wave_reflections.png)
 ### Thermal diffusion finite element
 
 Explicity solving the diffusion equation is challanging due to the large number of terms present in the resulting energy absorption rate equation. To circumvent this obstacle we use finite element to approximate the equation. The diffusion equation can be set below. Here we hold the edges of the simulation at a fixed temperature (room temperature).
@@ -40,6 +42,7 @@ Explicity solving the diffusion equation is challanging due to the large number 
 ![9](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20Q%7D%7B%5Cpartial%20t%7D%3D%5Cvarrho%20%5Ccdot%20C_%7Bp%7D%5Ccdot%20%5Cfrac%7B%5Cpartial%20T%7D%7B%5Cpartial%20t%7D-%5Cbigtriangledown%20%28k%5Cbigtriangledown%20T%29)
 
 
+![Diffusion Equation](https://github.com/OE-FET/numerical_laser_annealing/blob/master/imgs/Finite_element_results.png)
 ### Questions, problems, collaborations?
 For questions or problems please create an [issue](https://github.com/OE-FET/numerical_laser_annealing/issues). Please raise issues if sections of code require further explanation. For any other extensions please contact me directly (jwarmitage@gmail.com). Always happy to chat. :D
 
