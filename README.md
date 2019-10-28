@@ -77,9 +77,9 @@ For questions or problems please create an [issue](https://github.com/OE-FET/num
 Should be a standard installation. Please raise issue if mnecessary. 
 
 ## Components
-- **Run_example.m** - Main script for running example software.
-- **Run_EM.m** - Runs a electromagnetic simulation
-- **Run_diffusion_eqn.m** - Runs a thermal simulation
+- **Run_example.m** - main script for running example software.
+- **Run_EM.m** - runs a electromagnetic simulation
+- **Run_diffusion_eqn.m** - runs a thermal simulation
 - **quickInt.m** - speeds up intergrations of EM feilds
 - **PlotLaser.m** - plots laser 
 - **InitConstants.m** - initlaizes physical constants
