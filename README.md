@@ -12,23 +12,23 @@ Here the pulse is assumed to equalivent to a single freqnecy EM wave spaitally c
 
 The interaction between 
 
-https://latex.codecogs.com/gif.latex?E_%7Bn%2CL%7D%20&plus;E_%7Bn%2CR%7D%20%3D%20E_%7Bn&plus;1%2CL%7D%20&plus;E_%7Bn&plus;1%2CR%7D
+![](https://latex.codecogs.com/gif.latex?E_%7Bn%2CL%7D%20&plus;E_%7Bn%2CR%7D%20%3D%20E_%7Bn&plus;1%2CL%7D%20&plus;E_%7Bn&plus;1%2CR%7D)
 
-https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20E_%7Bn%2CL%7D&plus;E_%7Bn%2CR%7D%7D%7B%5Cpartial%20x%7D%20%3D%20%5Cfrac%7B%5Cpartial%20E_%7Bn&plus;1%2CL%7D&plus;E_%7Bn&plus;1%2CR%7D%7D%7B%5Cpartial%20x%7D
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20E_%7Bn%2CL%7D&plus;E_%7Bn%2CR%7D%7D%7B%5Cpartial%20x%7D%20%3D%20%5Cfrac%7B%5Cpartial%20E_%7Bn&plus;1%2CL%7D&plus;E_%7Bn&plus;1%2CR%7D%7D%7B%5Cpartial%20x%7D)
 
-https://latex.codecogs.com/gif.latex?D%20%3D%20%5Cvarepsilon%20E
+![](https://latex.codecogs.com/gif.latex?D%20%3D%20%5Cvarepsilon%20E)
 
-https://latex.codecogs.com/gif.latex?%5Cbigtriangledown%20E%20%3D%20-%5Cfrac%7B%5Cpartial%20B%7D%7B%5Cpartial%20t%7D
+![](https://latex.codecogs.com/gif.latex?%5Cbigtriangledown%20E%20%3D%20-%5Cfrac%7B%5Cpartial%20B%7D%7B%5Cpartial%20t%7D)
 
-https://latex.codecogs.com/gif.latex?H%20%3D%20%5Cfrac%7BB%7D%7B%5Cmu%20%7D
+![](https://latex.codecogs.com/gif.latex?H%20%3D%20%5Cfrac%7BB%7D%7B%5Cmu%20%7D)
 
-https://latex.codecogs.com/gif.latex?U%20%3D%20%5Cfrac%7B1%7D%7B2%7D%28E%5Ccdot%20D&plus;B%5Ccdot%20H%29%29
+![](https://latex.codecogs.com/gif.latex?U%20%3D%20%5Cfrac%7B1%7D%7B2%7D%28E%5Ccdot%20D&plus;B%5Ccdot%20H%29%29)
 
-https://latex.codecogs.com/gif.latex?S%20%3D%20E%20%5Ctimes%20H
+![](https://latex.codecogs.com/gif.latex?S%20%3D%20E%20%5Ctimes%20H)
 
-https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20A%7D%7B%5Cpartial%20t%7D%20%3D-%20%5Cfrac%7B%5Cpartial%20U%7D%7B%5Cpartial%20t%7D%20-%20%5Cbigtriangledown%20%5Ccdot%20S
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20A%7D%7B%5Cpartial%20t%7D%20%3D-%20%5Cfrac%7B%5Cpartial%20U%7D%7B%5Cpartial%20t%7D%20-%20%5Cbigtriangledown%20%5Ccdot%20S)
 
-https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20Q%7D%7B%5Cpartial%20t%7D%3D%5Cvarrho%20%5Ccdot%20C_%7Bp%7D%5Ccdot%20%5Cfrac%7B%5Cpartial%20T%7D%7B%5Cpartial%20t%7D-%5Cbigtriangledown%20%28k%5Cbigtriangledown%20T%29
+![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20Q%7D%7B%5Cpartial%20t%7D%3D%5Cvarrho%20%5Ccdot%20C_%7Bp%7D%5Ccdot%20%5Cfrac%7B%5Cpartial%20T%7D%7B%5Cpartial%20t%7D-%5Cbigtriangledown%20%28k%5Cbigtriangledown%20T%29)
 
 For a solid intro to electromanetic wave dynamics please reference "Introduction to Electrodynamics" by david j. griffiths. 
 ![Laser Pulse](https://github.com/OE-FET/numerical_laser_annealing/blob/master/imgs/wave_reflections.png)
