@@ -39,6 +39,7 @@ For a four layer stack including Air, In4ZnO, SiO2 and Si. the solution looks li
 
 Explicity solving the diffusion equation is challanging due to the large number of terms present in the resulting energy absorption rate equation. To circumvent this obstacle we use finite element to approximate the equation. The diffusion equation can be set below. Here we hold the edges of the simulation at a fixed temperature (room temperature).
 
+Finite element results of the stack seem above is presented below:
 ![9](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20Q%7D%7B%5Cpartial%20t%7D%3D%5Cvarrho%20%5Ccdot%20C_%7Bp%7D%5Ccdot%20%5Cfrac%7B%5Cpartial%20T%7D%7B%5Cpartial%20t%7D-%5Cbigtriangledown%20%28k%5Cbigtriangledown%20T%29)
 
 
