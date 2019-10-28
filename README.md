@@ -78,7 +78,6 @@ Should be a standard license package installation.
 - **Run_EM.m** - runs a electromagnetic simulation
 - **Run_diffusion_eqn.m** - runs a thermal simulation
 - **quickInt.m** - speeds up integrations of EM fields
-- **PlotLaser.m** - plots laser 
 - **InitConstants.m** - initializes physical constants
 - **genAR.m** - generate absorption of electromagnetic fields
 - **Example_stack.m** - example stack of materials
