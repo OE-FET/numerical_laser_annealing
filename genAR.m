@@ -1,5 +1,5 @@
 function [AR,E,winL] = genAR(Eps, numlayers, thick, mew,fluence,polar)
-% Solved for amplitudes (AR) of EM waves propagating through stack. 
+% Solved for absorption rate (AR) of EM waves propagating through stack. 
 
 display('Calculating Real and imagine compontents of the refractive index')
 for(index = 1:numlayers)
