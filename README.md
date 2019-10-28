@@ -1,18 +1,38 @@
 # Numerical Simulation of laser annealed 1D stacks of materials
 ## Overview
 
-This repository contains matlab software to simulate the maximum temperature reached when a stack of materials is pulsed with a laser. By determing the maximum temperature we are able to estimate if the stack will be obliterated by the laser pule ressulting in vapourization/deformation of the material. Using this software, in the power point slide we demonstrate  the software to engineer a stack of materials to sufficently thermal anneal the IZO film without damaging the PEN substrate underneath.  
+This repository contains matlab software to simulate the laser pulse annealing of a stack of materials. Here the simulation is used to determine the maximum temperature achieved during laser annealing inorder to estimate if the stack will be obliterated or deformed by the laser pulse. Using this software, we desgined a stack of materials to locally heat solution processed IZO films on Polyethylene naphthalate substrates that did not damage the substrates.
 
-By tuning the material stack were are able to engineer stacks such that 
+### Generation of Pulse
+Here the pulse is assumed to equalivent to a single freqnecy EM wave spaitally confied by spaiatlay mulitplying the wave by a gusiassn. To simulate the resulting pulse, through Fourier analysis simulation then decomposed the pulse into a linear combination of single freqney EM waves. The resulting interaction of each indepdent wave is solved seperatly.
+
+![Laser Pulse](https://github.com/OE-FET/numerical_laser_annealing/blob/master/imgs/pulse_generation.png)
 
 ### Solving electromagnetic wave equation
 
+The interaction between 
+
+https://latex.codecogs.com/gif.latex?E_%7Bn%2CL%7D%20&plus;E_%7Bn%2CR%7D%20%3D%20E_%7Bn&plus;1%2CL%7D%20&plus;E_%7Bn&plus;1%2CR%7D
+
+https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20E_%7Bn%2CL%7D&plus;E_%7Bn%2CR%7D%7D%7B%5Cpartial%20x%7D%20%3D%20%5Cfrac%7B%5Cpartial%20E_%7Bn&plus;1%2CL%7D&plus;E_%7Bn&plus;1%2CR%7D%7D%7B%5Cpartial%20x%7D
+
+https://latex.codecogs.com/gif.latex?D%20%3D%20%5Cvarepsilon%20E
+
+https://latex.codecogs.com/gif.latex?%5Cbigtriangledown%20E%20%3D%20-%5Cfrac%7B%5Cpartial%20B%7D%7B%5Cpartial%20t%7D
+
+https://latex.codecogs.com/gif.latex?H%20%3D%20%5Cfrac%7BB%7D%7B%5Cmu%20%7D
+
+https://latex.codecogs.com/gif.latex?U%20%3D%20%5Cfrac%7B1%7D%7B2%7D%28E%5Ccdot%20D&plus;B%5Ccdot%20H%29%29
+
+https://latex.codecogs.com/gif.latex?S%20%3D%20E%20%5Ctimes%20H
+
+https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20A%7D%7B%5Cpartial%20t%7D%20%3D-%20%5Cfrac%7B%5Cpartial%20U%7D%7B%5Cpartial%20t%7D%20-%20%5Cbigtriangledown%20%5Ccdot%20S
+
+https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20Q%7D%7B%5Cpartial%20t%7D%3D%5Cvarrho%20%5Ccdot%20C_%7Bp%7D%5Ccdot%20%5Cfrac%7B%5Cpartial%20T%7D%7B%5Cpartial%20t%7D-%5Cbigtriangledown%20%28k%5Cbigtriangledown%20T%29
+
+For a solid intro to electromanetic wave dynamics please reference "Introduction to Electrodynamics" by david j. griffiths. 
 ![Laser Pulse](https://github.com/OE-FET/numerical_laser_annealing/blob/master/imgs/wave_reflections.png)
 
-### Generation of Pulse
-The pulse is generated as picture below. Here we assume that the pulse is guassian distributed and centered at a specific frequency.   
-
-![Laser Pulse](https://github.com/OE-FET/numerical_laser_annealing/blob/master/imgs/pulse_generation.png)
 
 
 
