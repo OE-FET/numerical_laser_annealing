@@ -75,7 +75,7 @@ Should be a standard license package installation.
 
 ## Components
 - **Run_example.m** - main script for running example software.
-- **Run_EM.m** - runs a electromagnetic simulation
+- **Run_EM.m** - runs an EM simulation
 - **Run_diffusion_eqn.m** - runs a thermal simulation
 - **quickInt.m** - speeds up integrations of EM fields
 - **InitConstants.m** - initializes physical constants
