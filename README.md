@@ -71,7 +71,6 @@ For questions or problems please create an [issue](https://github.com/OE-FET/num
 ## How to implement
 ### Requirements
 - standard Matlab 2016a
-Should be a standard license package installation. 
 
 ## Components
 - **Run_example.m** - main script for running example software.
