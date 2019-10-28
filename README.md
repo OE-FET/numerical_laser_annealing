@@ -17,7 +17,7 @@ At each boundary the amplitude of the EM wave equation must be continuous along 
 </p>
 
 <p align="center">
-  <img width="" height="" src="https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20E_%7Bn%2CL%7D&plus;E_%7Bn%2CR%7D%7D%7B%5Cpartial%20x%7D%20%3D%20%5Cfrac%7B%5Cpartial%20E_%7Bn&plus;1%2CL%7D&plus;E_%7Bn&plus;1%2CR%7D%7D%7B%5Cpartial%20x%7D">
+  <img width="" height="" src="https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20%7D%7B%5Cpartial%20x%7D%28E_%7Bn%2CL%7D&plus;E_%7Bn%2CR%7D%29%20%3D%5Cfrac%7B%5Cpartial%20%7D%7B%5Cpartial%20x%7D%28E_%7Bn&plus;1%2CL%7D&plus;E_%7Bn&plus;1%2CR%7D%29">
 </p>
 
 
@@ -78,7 +78,6 @@ Should be a standard license package installation.
 - **Run_EM.m** - runs a electromagnetic simulation
 - **Run_diffusion_eqn.m** - runs a thermal simulation
 - **quickInt.m** - speeds up integrations of EM fields
-- **PlotLaser.m** - plots laser 
 - **InitConstants.m** - initializes physical constants
 - **genAR.m** - generate absorption of electromagnetic fields
 - **Example_stack.m** - example stack of materials
